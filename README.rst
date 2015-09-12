@@ -33,8 +33,7 @@ event and the entire auto-complete machinery kicks into high gear.
 Depending on your browser's algorithm and if you are in
 private/incognito mode or not various suggestions will be presented
 to you in the dropbox below the URL bar. Most of these algorithms
-prioritize results based on search history and bookmarks. Some
-browsers like Rockmelt even suggested your Facebook friends. You are
+prioritize results based on search history and bookmarks. You are
 going to type "google.com" so none of it matters, but a lot of code
 will run before you get there and the suggestions will be refined
 with each key press. It may even suggest "google.com" before you type it.
@@ -541,7 +540,7 @@ The components of the browsers are:
   boxes and windows. This backend exposes a generic interface that is not
   platform specific.
   Underneath it uses operating system user interface methods.
-* **JavaScript interpreter:** The JavaScript interpreter is used to parse and
+* **JavaScript engine:** The JavaScript engine is used to parse and
   execute JavaScript code.
 * **Data storage:** The data storage is a persistence layer. The browser may
   need to save all sorts of data locally, such as cookies. Browsers also
@@ -578,7 +577,7 @@ The reasons are:
   process actually modifies the input.
 
 Unable to use the regular parsing techniques, the browser utilizes a custom
-parsers for parsing HTML. The parsing algorithm is described in
+parser for parsing HTML. The parsing algorithm is described in
 detail by the HTML5 specification.
 
 The algorithm consists of two stages: tokenization and tree construction.
@@ -663,7 +662,7 @@ of some timing mechanism (such as a Google Doodle animation) or user
 interaction (typing a query into the search box and receiving suggestions).
 Plugins such as Flash or Java may execute as well, although not at this time on
 the Google homepage. Scripts can cause additional network requests to be
-performed, as well as modify the page or its layout, effecting another round of
+performed, as well as modify the page or its layout, causing another round of
 page rendering and painting.
 
 .. _`Creative Commons Zero`: https://creativecommons.org/publicdomain/zero/1.0/
